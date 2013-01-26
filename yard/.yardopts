@@ -1,9 +1,0 @@
--o html
--plugin docs/templates/plugin.rb
--p docs/templates
--t notes
---asset docs/images:images
---exclude docs/templates
--
-docs/WebDevelopment.md
-docs/UsingYard.md
