@@ -1,0 +1,25 @@
+{
+  "name": "kbrammer.github.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kbrammer/kbrammer.github.com.git"
+  },
+  "author": "Kevin Brammer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kbrammer/kbrammer.github.com/issues"
+  },
+  "homepage": "https://github.com/kbrammer/kbrammer.github.com#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
