@@ -1,0 +1,96 @@
+@import 'normalize'
+@import 'helper'
+@import '../bower_components/jeet/stylus/jeet/_settings'
+@import '../bower_components/jeet/stylus/jeet/_functions'
+@import '../bower_components/jeet/stylus/jeet/_grid'
+
+/* Stylus Syntax Quick Reference
+  _____________
+  column(ratios = 1, offset = 0, cycle = 0, uncycle = 0, gutter = jeet.gutter)
+  span(ratio = 1, offset = 0)
+  shift(ratios = 0, col_or_span = column, gutter = jeet.gutter)
+  unshift()
+  edit()
+  center(max_width = 1410px, pad = 0)
+  stack(pad = 0, align = false)
+  unstack()
+  align(direction = both)
+  cf()
+*/
+
+/* variables */
+$lightgrey = #999
+$grey = #eee
+$blue = #66D9EF
+$clay = #272822
+$pink = #f92672
+$green = #a6e22e
+$orange = #fd971f
+$white = #ffffff
+
+@font-face 
+  font-family: 'Chunkfive'
+  src: url('../fonts/Chunkfive.otf') format('opentype')
+
+// html
+  // background: url(../img/frog_pond.jpg) no-repeat center center fixed 
+  // -webkit-background-size: cover
+  // -moz-background-size: cover
+  // -o-background-size: covers
+  // background-size: cover
+  
+html
+button
+input
+select
+textarea 
+  color: $clay
+
+a
+a:visited
+  font: 12px Helvetica, Arial, sans-serif
+  color: $blue
+  text-decoration: none
+
+a:hover
+  color: lighten($blue,10%)
+  
+body
+  font: 14px Helvetica, Arial, sans-serif
+  color: $clay
+  font-size: 1em
+  line-height: 1.5
+  background-color: $white
+  margin: 0 2em 0 2em
+
+h1
+  font:24px Chunkfive, serif
+  
+h2
+  font:18px Chunkfive, serif
+  color:$pink
+
+p
+  font: 14px Helvetica, Arial, sans-serif
+  color:$clay
+
+
+header
+  col(3/3)
+  display:block
+  margin-bottom: 1em
+  
+section
+ center()
+ 
+article
+  col(3/3)
+
+article.about-me
+  p
+    font: 20px Helvetica, Arial, sans-serif
+    
+  img
+    float:left
+    margin-right:2em
+    max-width:150px
