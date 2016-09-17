@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kevin Brammer : GitHub Pages" />
-        <title>Kevin Brammer</title>
-        <link rel="shortcut icon" href="fav.png">
-        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
-    </head>
-    <body>
-        <header>
-            <a id="forkme_banner" href="https://github.com/kbrammer">View on GitHub</a>
-        </header>
-        <section>
-            <article>
-                <h2>Photos</h2>
-                <img class="img-thumbnail" src="assets/img/yertle.jpg">
-                <img class="img-thumbnail" src="assets/img/lake.jpg">
-                <img class="img-thumbnail" src="assets/img/clouds.jpg">
-                <img class="img-thumbnail" src="assets/img/downtown_houston.JPG">
-                <img class="img-thumbnail" src="assets/img/skatepark.jpg">
-            </article>
-            <article class="about-me">
-                <h2>About Me</p>
-                <img class="img-thumbnail" src="assets/img/gravatar.jpg" alt="Kevin Brammer Gravatar">
-                <p>I'm a web developer based in Houston, Texas. I enjoy building websites using, well, really just about anything. I'm a little obsessive like that. When I'm not coding, you'll find me looking for creative ways to break another bone on my skateboard, playing guitar, traveling with my girlfriend, or spending time with my son.</p>
-            </article>
-        </section>
-    <script type="text/javascript" src="assets/js/bundle.js"></script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Brammer</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">KBRAMMER</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <button class="btn btn-inverse" id="restart-btn" title="Restart"><i class="glyphicon glyphicon-eject"></i></button>
+                    <button class="btn btn-inverse" id="pause-btn" title="Pause"><i class="glyphicon glyphicon-pause"></i></button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="blink-me" href="#">0 Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div id="game"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/phaser.js"></script>
+    <script src="assets/js/game.js"></script>
 </body>
+
 </html>
